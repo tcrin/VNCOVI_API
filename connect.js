@@ -5,7 +5,7 @@ const config ={
     server: "DESKTOP-SB86CRA",
     user: 'sa',
     password: '010300',
-    database: 'VNCOVI',
+    database: 'DACN1_VNCOVI',
     driver: 'msnodesqlv8',
     options: {
         trustedConnection: true
