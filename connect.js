@@ -2,7 +2,7 @@ const sql = require('mssql/msnodesqlv8')
 
 //Các thông tin kết nối CSDL
 const config ={
-    server: "DESKTOP-SB86CRA",
+    server: "RIN",
     user: 'sa',
     password: '010300',
     database: 'DACN1_VNCOVI',

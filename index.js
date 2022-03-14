@@ -98,7 +98,7 @@ app.get('/vaccine',async (req,res)=>{
 // http://localhost:3000/vaccine
 app.post('/vaccine',async (req,res)=>{
   const pool = await connect;
-  var sqlString = 'INSERT INTO Vaccine (name_vaccine,type_vaccine,doses,effective,company,[image]) VALUES (@name_vaccine,@type_vaccine,@doses,@effective,@company,@image)';//
+  var sqlString = 'INSERT INTO Vaccine (name_vaccine,type_vaccine,doses,effective,company,storage,[image]) VALUES (@name_vaccine,@type_vaccine,@doses,@effective,@company,@storage,@image)';//
   return await pool.request()
   .input('name_vaccine', sql.NVarChar, req.body.name_vaccine)
   .input('type_vaccine', sql.NVarChar, req.body.type_vaccine)
